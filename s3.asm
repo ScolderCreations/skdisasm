@@ -36,8 +36,8 @@ Vectors:	dc.l	Vectors,	EntryPoint,	ErrorTrap,	ErrorTrap	; 0
 		dc.l	ErrorTrap,	ErrorTrap,	ErrorTrap,	ErrorTrap	; 60
 Header:		dc.b "SEGA GENESIS    "
 Copyright:	dc.b "(C)SEGA 1993.NOV"
-Domestic_Name:	dc.b "SONIC THE             HEDGEHOG 3                "
-Overseas_Name:	dc.b "SONIC THE             HEDGEHOG 3                "
+Domestic_Name:	dc.b "3 SONIC THE             HEDGEHOG                "
+Overseas_Name:	dc.b "3 SONIC THE             HEDGEHOG                "
 Serial_Number:	dc.b "GM MK-1079 -00"
 Checksum:	dc.w $A8F2
 Input:		dc.b "J               "
@@ -363,11 +363,11 @@ byte_475:	dc.b $12
 byte_478:	dc.b $F
 		dc.b "SYSTEMS.",0
 		dc.b $C
-		dc.b "NTSC MEGA DRIVE",0
+		dc.b "SUPA MARIO",0
 		dc.b $D
-		dc.b "NTSC GENESIS",0
+		dc.b "NITENDO SIXTYFO",0
 		dc.b 4
-		dc.b "PAL AND FRENCH SECAM MEGA DRIVE",0
+		dc.b "amogus",0
 byte_4C2:	dc.b    0,   0,   0,   0,   0,   0,   0,   0, $18, $18, $18, $18,   0, $18, $18,   0
 		dc.b  $36, $36, $48,   0,   0,   0,   0,   0, $12, $12, $7F, $12, $7F, $24, $24,   0
 		dc.b    8, $3F, $48, $3E,   9, $7E,   8,   0, $71, $52, $74,   8, $17, $25, $47,   0
@@ -8566,7 +8566,7 @@ TextOptScr_TailsAlone:
 TextOptScr_VsModeItems:
 		levselstr "* VS MODE ITEMS *"
 TextOptScr_AllKindsItems:
-		levselstr "ALL KINDS ITEMS"
+		levselstr "* CRACK MODE *"
 TextOptScr_TeleportOnly:
 		levselstr "TELEPORT ONLY  "
 TextOptScr_SoundTest:
@@ -8574,37 +8574,37 @@ TextOptScr_SoundTest:
 TextOptScr_0:
 		levselstr "      00       "
 Text2P_EmeraldHill:
-		levselstr "EMERALD HILL"
+		levselstr "LUNAR SKYSCRAPERS"
 Text2P_MysticCave:
-		levselstr " MYSTIC CAVE"
+		levselstr "AZURE PARADISE"
 Text2P_CasinoNight:
-		levselstr "CASINO NIGHT"
+		levselstr "DID I ASK"
 Text2P_SpecialStage:
-		levselstr "SPECIAL STAGE"
+		levselstr "SPECIAL EDU"
 Text2P_Special:	levselstr "   SPECIAL  "
 Text2P_Zone:	levselstr "ZONE "
 Text2P_Stage:	levselstr "STAGE"
-Text2P_GameOver:levselstr "GAME OVER"
-Text2P_TimeOver:levselstr "TIME OVER"
+Text2P_GameOver:levselstr "GET REKT"
+Text2P_TimeOver:levselstr "TIME UP"
 Text2P_NoGame:	levselstr "NO GAME"
-Text2P_Tied:	levselstr "TIED"
+Text2P_Tied:	levselstr "WHAT"
 Text2P_1P:	levselstr " 1P"
 Text2P_2P:	levselstr " 2P"
 Text2P_Blank:	levselstr "    "
-LevelSelectText:levselstr "ANGEL ISLAND"
-		levselstr "HYDROCITY"
-		levselstr "MARBLE GARDEN"
-		levselstr "CARNIVAL NIGHT"
-		levselstr "FLYING BATTERY"
-		levselstr "ICECAP"
-		levselstr "LAUNCH BASE"
-		levselstr "MUSHROOM VALLEY"
-		levselstr "SANDOPOLIS"
+LevelSelectText:levselstr "AMONG US"
+		levselstr "HIDRASITY"
+		levselstr "GIRBLE MARDEN"
+		levselstr "I FORGOR"
+		levselstr "FLYING BAT"
+		levselstr "ICE BLAST"
+		levselstr "LUNCH BASE"
+		levselstr "MUSHROOM BALLEY"
+		levselstr "HELL"
 		levselstr "2P VS"
 		levselstr "2P VS"
 		levselstr "2P VS"
 		levselstr "BONUS"
-		levselstr "SPECIAL STAGE"
+		levselstr "SPECIAL EDU"
 		levselstr "SOUND TEST  *"
 		even
 Pal_S2LevelIcons:
@@ -77282,10 +77282,10 @@ S3CreditsText_Main:
 		dc.w 0
 word_40B7C:	dc.w 1
 		dc.w $598
-		dc.b "SONIC  III",0
+		dc.b "III   SONIC",0
 		even
 		dc.w $8A2
-		dc.b "staff",0
+		dc.b "taffy",0
 		even
 word_40B94:	dc.w 1
 		dc.w $48E
@@ -77296,35 +77296,35 @@ word_40B94:	dc.w 1
 		even
 word_40BC2:	dc.w 1
 		dc.w $490
-		dc.b "    project manager",0
+		dc.b "    project manger",0
 		even
 		dc.w $78E
 		dc.b "HISASHI  SUZUKI",0
 		even
 word_40BEC:	dc.w 1
 		dc.w $490
-		dc.b "    project manager",0
+		dc.b "    project manger",0
 		even
 		dc.w $78A
 		dc.b "SHINOBU  TOYODA",0
 		even
 word_40C16:	dc.w 1
 		dc.w $490
-		dc.b "    project manager",0
+		dc.b "    project manger",0
 		even
 		dc.w $78A
 		dc.b "MASAHARU  YOSHII",0
 		even
 word_40C42:	dc.w 1
 		dc.w $4A0
-		dc.b "producer",0
+		dc.b "reducer",0
 		even
 		dc.w $798
 		dc.b "YUJ I  NAKA",0
 		even
 word_40C5E:	dc.w 1
 		dc.w $498
-		dc.b "    director",0
+		dc.b "   direct tv",0
 		even
 		dc.w $786
 		dc.b "HIROKAZU  YASUHARA",0
@@ -77348,14 +77348,14 @@ word_40CB8:	dc.w 2
 		even
 word_40CFC:	dc.w 1
 		dc.w $498
-		dc.b "lead programmer",0
+		dc.b "lead pro gamer",0
 		even
 		dc.w $796
 		dc.b "YUJ I  NAKA",0
 		even
 word_40D1E:	dc.w 2
 		dc.w $48E
-		dc.b "    senior programmers",0
+		dc.b "    senior pro gamers",0
 		even
 		dc.w $688
 		dc.b "HIROSHI NIKAIDOH",0
@@ -77365,7 +77365,7 @@ word_40D1E:	dc.w 2
 		even
 word_40D62:	dc.w 1
 		dc.w $496
-		dc.b "character designer",0
+		dc.b "character signer",0
 		even
 		dc.w $784
 		dc.b "TAKASHI THOMAS YUDA",0
@@ -77608,7 +77608,7 @@ word_4134C:	dc.w 1
 		dc.b "     presented by",0
 		even
 		dc.w $78A
-		dc.b "          SEGA           ",0
+		dc.b "          SAGE           ",0
 		even
 S3CreditsText_Dummy:
 		dc.w word_4138C-S3CreditsText_Dummy
