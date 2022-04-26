@@ -10,7 +10,7 @@ LockonSerialNumber		EQU LockOnROM_Start+$180
 SSMagic_TestLoc_2001A4		EQU LockOnROM_Start+$1A4
 
 Pal_Competition1:
-		binclude "General/Competition Menu/Palettes/1.bin"
+		binclude "General/Competition Menu/Palettes/3.bin"
 		even
 Map_CompetitionObject:
 		include "General/Competition Menu/Map - Competition Objects.asm"
@@ -19,13 +19,13 @@ MapUnc_CompetitionNumbers:
 		binclude "General/Competition Menu/Uncompressed Map/Numbers.bin"
 		even
 Pal_Competition2:
-		binclude "General/Competition Menu/Palettes/2.bin"
+		binclude "General/Competition Menu/Palettes/4.bin"
 		even
 Pal_Competition3:
-		binclude "General/Competition Menu/Palettes/3.bin"
+		binclude "General/Competition Menu/Palettes/2.bin"
 		even
 Pal_Competition4:
-		binclude "General/Competition Menu/Palettes/4.bin"
+		binclude "General/Competition Menu/Palettes/1.bin"
 		even
 Map_CompetitionSelect:
 		include "General/Competition Menu/Map - Competition Select.asm"
@@ -93,15 +93,15 @@ Map_HCZBreakableBar:
 Map_HCZBlock:
 		include "Levels/HCZ/Misc Object Data/Map - Block.asm"
 Map_AIZRock:
-		include "Levels/AIZ/Misc Object Data/Map - Rock.asm"
-Map_AIZRock2:
 		include "Levels/AIZ/Misc Object Data/Map - Rock 2.asm"
+Map_AIZRock2:
+		include "Levels/AIZ/Misc Object Data/Map - Rock.asm"
 Map_EMZRock:
-		include "Levels/EMZ/Misc Object Data/Map - Rock.asm"
+		include "Levels/EMZ/Misc Object Data/Map - Rock 2.asm"
 Map_AIZCollapsingPlatform:
-		include "Levels/AIZ/Misc Object Data/Map - Collapsing Platform.asm"
-Map_AIZCollapsingPlatform2:
 		include "Levels/AIZ/Misc Object Data/Map - Collapsing Platform 2.asm"
+Map_AIZCollapsingPlatform2:
+		include "Levels/AIZ/Misc Object Data/Map - Collapsing Platform.asm"
 Map_LBZCollapsingBridge:
 		include "Levels/LBZ/Misc Object Data/Map - Collapsing Bridge.asm"
 Map_LBZCollapsingLedge:
@@ -167,9 +167,9 @@ Map_LBZCorkFloor:
 Map_AIZFlippingBridge:
 		include "Levels/AIZ/Misc Object Data/Map - Flipping Bridge.asm"
 Map_AIZFallingLog2:
-		include "Levels/AIZ/Misc Object Data/Map - Falling Log 2.asm"
-Map_AIZFallingLog:
 		include "Levels/AIZ/Misc Object Data/Map - Falling Log.asm"
+Map_AIZFallingLog:
+		include "Levels/AIZ/Misc Object Data/Map - Falling Log 2.asm"
 Map_AIZFallingLogSplash2:
 		include "Levels/AIZ/Misc Object Data/Map - Falling Log Splash 2.asm"
 Map_AIZFallingLogSplash:
@@ -669,10 +669,10 @@ ArtKos_S3TitleSonic8:
 		binclude "General/Title/Kosinski Art/S3 Sonic 8.bin"
 		even
 ArtKos_S3TitleSonic9:
-		binclude "General/Title/Kosinski Art/S3 Sonic 9.bin"
+		binclude "General/Title/Kosinski Art/S3 Sonic A.bin"
 		even
 ArtKos_S3TitleSonicA:
-		binclude "General/Title/Kosinski Art/S3 Sonic A.bin"
+		binclude "General/Title/Kosinski Art/S3 Sonic 9.bin"
 		even
 ArtKos_S3TitleSonicB:
 		binclude "General/Title/Kosinski Art/S3 Sonic B.bin"
@@ -1243,10 +1243,10 @@ ArtKos_SaveScreenMisc:
 Snd_Bank3_Start:	startBank
 Snd_AIZ1:	binclude "Sound/Music/AIZ1.bin"
 Snd_AIZ2:	binclude "Sound/Music/AIZ2.bin"
-Snd_HCZ1:	binclude "Sound/Music/HCZ1.bin"
+Snd_HCZ1:	binclude "Sound/Music/MGZ2.bin"
 Snd_HCZ2:	binclude "Sound/Music/HCZ2.bin"
 Snd_MGZ1:	binclude "Sound/Music/MGZ1.bin"
-Snd_MGZ2:	binclude "Sound/Music/MGZ2.bin"
+Snd_MGZ2:	binclude "Sound/Music/HCZ2.bin"
 Snd_CNZ2:	binclude "Sound/Music/CNZ2.bin"
 Snd_CNZ1:	binclude "Sound/Music/CNZ1.bin"
 
@@ -1257,9 +1257,9 @@ Snd_CNZ1:	binclude "Sound/Music/CNZ1.bin"
 ; ---------------------------------------------------------------------------
 Snd_Bank4_Start:	startBank
 Snd_ICZ2:	binclude "Sound/Music/ICZ2.bin"
-Snd_ICZ1:	binclude "Sound/Music/ICZ1.bin"
+Snd_ICZ1:	binclude "Sound/Music/LBZ1.bin"
 Snd_LBZ2:	binclude "Sound/Music/LBZ2.bin"
-Snd_LBZ1:	binclude "Sound/Music/LBZ1.bin"
+Snd_LBZ1:	binclude "Sound/Music/ICZ1.bin"
 
 	finishBank
 
