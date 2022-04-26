@@ -13,7 +13,7 @@
 ; ===========================================================================
 
 ; Set this to 1 to fix some bugs in the driver.
-fix_sndbugs				=  0
+fix_sndbugs				=  1
 
 ; Function to make a little endian (z80) pointer
 k68z80Pointer function addr,((((addr&$7FFF)+$8000)<<8)&$FF00)+(((addr&$7FFF)+$8000)>>8)
@@ -92,9 +92,9 @@ Snd_SKCredits:		binclude	"Sound/Music/Credits.bin"
 Snd_GameOver:		binclude	"Sound/Music/Game Over.bin"
 Snd_Continue:		binclude	"Sound/Music/Continue.bin"
 Snd_Results:		binclude	"Sound/Music/Level Outro.bin"
-Snd_Invic:			binclude	"Sound/Music/Invincible.bin"
+Snd_Invic:			binclude	"Sound/Music/Final Boss.bin"
 Snd_Menu:			binclude	"Sound/Music/Menu.bin"
-Snd_FinalBoss:		binclude	"Sound/Music/Final Boss.bin"
+Snd_FinalBoss:		binclude	"Sound/Music/Invincible.bin"
 Snd_PresSega:		binclude	"Sound/Music/Game Complete.bin"
 
 Snd_Bank1_End
@@ -110,7 +110,7 @@ Snd_Bank1_End
 ; Music Bank 2
 ; ---------------------------------------------------------------------------
 Snd_Bank2_Start:	startBank
-Snd_FBZ1:			binclude	"Sound/Music/FBZ1.bin"
+Snd_FBZ1:			binclude	"Sound/Music/SSZ.bin"
 Snd_FBZ2:			binclude	"Sound/Music/FBZ2.bin"
 Snd_MHZ1:			binclude	"Sound/Music/MHZ1.bin"
 Snd_MHZ2:			binclude	"Sound/Music/MHZ2.bin"
@@ -118,7 +118,7 @@ Snd_SOZ1:			binclude	"Sound/Music/SOZ1.bin"
 Snd_SOZ2:			binclude	"Sound/Music/SOZ2.bin"
 Snd_LRZ1:			binclude	"Sound/Music/LRZ1.bin"
 Snd_LRZ2:			binclude	"Sound/Music/LRZ2.bin"
-Snd_SSZ:			binclude	"Sound/Music/SSZ.bin"
+Snd_SSZ:			binclude	"Sound/Music/Competition Menu.bin"
 Snd_DEZ1:			binclude	"Sound/Music/DEZ1.bin"
 Snd_DEZ2:			binclude	"Sound/Music/DEZ2.bin"
 Snd_Minib_SK:		binclude	"Sound/Music/Miniboss.bin"
@@ -129,8 +129,8 @@ Snd_SpecialS:		binclude	"Sound/Music/Special Stage.bin"
 Snd_SlotBonus:		binclude	"Sound/Music/Slots.bin"
 Snd_Knux:			binclude	"Sound/Music/Knuckles.bin"
 Snd_Title:			binclude	"Sound/Music/Title.bin"
-Snd_1UP:			binclude	"Sound/Music/1UP.bin"
-Snd_Emerald:		binclude	"Sound/Music/Chaos Emerald.bin"
+Snd_1UP:			binclude	"Sound/Music/Game Over.bin"
+Snd_Emerald:		binclude	"Sound/Music/Game Over.bin"
 
 	finishBank
 
@@ -3001,8 +3001,8 @@ zFMFrequencies:
 ; MUSIC BANKS
 ; ===========================================================================
 z80_MusicBanks:
-		db  zmake68kBank(Snd_AIZ1),zmake68kBank(Snd_AIZ2),zmake68kBank(Snd_HCZ1),zmake68kBank(Snd_HCZ2)
-		db  zmake68kBank(Snd_MGZ1),zmake68kBank(Snd_MGZ2),zmake68kBank(Snd_CNZ1),zmake68kBank(Snd_CNZ2)
+		db  zmake68kBank(Snd_MGZ1),zmake68kBank(Snd_AIZ2),zmake68kBank(Snd_HCZ1),zmake68kBank(Snd_HCZ2)
+		db  zmake68kBank(Snd_AIZ1),zmake68kBank(Snd_MGZ2),zmake68kBank(Snd_CNZ1),zmake68kBank(Snd_CNZ2)
 		db  zmake68kBank(Snd_FBZ1),zmake68kBank(Snd_FBZ2),zmake68kBank(Snd_ICZ1),zmake68kBank(Snd_ICZ2)
 		db  zmake68kBank(Snd_LBZ1),zmake68kBank(Snd_LBZ2),zmake68kBank(Snd_MHZ1),zmake68kBank(Snd_MHZ2)
 
