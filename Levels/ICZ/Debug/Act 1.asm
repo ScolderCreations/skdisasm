@@ -1,5 +1,5 @@
 	;          Object			Mappings		Subtype Frame Arttile
-	dbglistobj Obj_Ring,			Map_Ring,		   0,   0, make_art_tile(ArtTile_Ring,1,1)
+	dbglistobj Obj_Ring,			Map_Spring,		   $81,   0, make_art_tile($4A4,0,0)
 	dbglistobj Obj_Monitor,			Map_Monitor,		   6,   0, make_art_tile(ArtTile_Monitors,0,0)
 	dbglistobj Obj_PathSwap,		Map_PathSwap,		   9,   1, make_art_tile(ArtTile_Ring,1,0)
 	dbglistobj Obj_PathSwap,		Map_PathSwap,		  $D,   5, make_art_tile(ArtTile_Ring,1,0)

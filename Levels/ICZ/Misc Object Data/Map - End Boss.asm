@@ -51,13 +51,13 @@ Frame_362D5A:	dc.w 1
 		dc.b $F4, $A,  0,$5C,$FF,$F4
 Frame_362D62:	dc.w 1
 		dc.b $F4, $A,  0,$65,$FF,$F4
-Frame_362D6A:	dc.w 1
+Frame_362D6A:	dc.w 3
 		dc.b $F4, $A,  0,$6E,$FF,$F4
 Frame_362D72:	dc.w 1
 		dc.b $F8,  9,  0,$77,$FF,$F4
 Frame_362D7A:	dc.w 1
 		dc.b $F0, $F,  0,$7D,$FF,$F0
-Frame_362D82:	dc.w 1
+Frame_362D82:	dc.w 3
 		dc.b $F0, $F,  0,$8D,$FF,$F0
 Frame_362D8A:	dc.w 1
 		dc.b $F0, $F,  0,$9D,$FF,$F0
@@ -67,7 +67,7 @@ Frame_362D9A:	dc.w 1
 		dc.b $F0, $F,  0,$BD,$FF,$F0
 Frame_362DA2:	dc.w 1
 		dc.b $FC,  0,  0,$CD,$FF,$FC
-Frame_362DAA:	dc.w 1
+Frame_362DAA:	dc.w 3
 		dc.b $F8,  5,  0,$CE,$FF,$F8
 Frame_362DB2:	dc.w 1
 		dc.b $F8,  5,  0,$D2,$FF,$F8
